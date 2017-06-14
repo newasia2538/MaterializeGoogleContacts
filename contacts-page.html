@@ -10,24 +10,25 @@
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-
-  <nav>
-    <div class="nav-wrapper indigo accent-4">
-      <ul class="left">
-        <li>
-          <a href="#" data-activates="slide-out" class="button"><i class="material-icons">menu</i></a>
-        </li>
-        <li class="hide-on-med-and-down"><a href="contacts-page.html" style="font-size:24px;">Google Contacts</a></li>
-        <li class="hide-on-large-only"><a href="contacts-page.html" style="font-size:24px;">Contacts</a></li>
-      </ul>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#!"><i class="material-icons">apps</i></a></li>
-        <li><a href="#!"><i class="material-icons">notifications</i></a></li>
-        <li><a href="#!"><img class="circle-avatar-on-navbar" src="pic/profile.png"></a></li>
-        <li><a href="#!" class="button-collapse"><i class="material-icons">search</i></a></li>
-      </ul>
-    </div>
-  </nav>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper indigo accent-4">
+        <ul class="left">
+          <li>
+            <a href="#" data-activates="slide-out" class="button"><i class="material-icons">menu</i></a>
+          </li>
+          <li class="hide-on-med-and-down"><a href="contacts-page.html" style="font-size:24px;">Google Contacts</a></li>
+          <li class="hide-on-large-only"><a href="contacts-page.html" style="font-size:24px;">Contacts</a></li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#!"><i class="material-icons">apps</i></a></li>
+          <li><a href="#!"><i class="material-icons">notifications</i></a></li>
+          <li><a href="#!"><img class="circle-avatar-on-navbar" src="pic/profile.png"></a></li>
+          <li><a href="#!" class="button-collapse"><i class="material-icons">search</i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
   <ul id="slide-out" class="side-nav fixed" style="top:64px;">
     <li>
@@ -73,8 +74,8 @@
 
 <body>
   <!-- Modal Trigger -->
-  <div style="position:absolute; bottom: 24px; right: 24px;">
-    <a class="btn-floating waves-effect waves-light red btn-larg modal-trigger" href="#modal1">
+  <div class="fixed-action-btn" style="bottom: 24px; right: 24px;">
+    <a class="btn-floating btn-large waves-effect waves-light red modal-trigger" href="#modal1">
       <i class="material-icons">add</i>
     </a>
   </div>
@@ -87,111 +88,111 @@
         <div class="col s2 m2 l1" style="padding-left:0;">
           <ul>
             <li class="center">
-            <form action="#">
-              <div class="file-field input-field">
-                <div>
-                  <i class="medium material-icons grey-text lighten-2" style="cursor:pointer;">account_circle</i>
-                  <input type="file">
+              <form action="#">
+                <div class="file-field input-field">
+                  <div>
+                    <i class="medium material-icons grey-text lighten-2" style="cursor:pointer;">account_circle</i>
+                    <input type="file">
+                  </div>
                 </div>
-              </div>
-            </form>
-          </li>
-          <li class="center" style="margin-top:216px; height:45px; margin-bottom:20px;">
-            <i class="material-icons grey-text">domain</i>
-          </li>
-          <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
-            <i class="material-icons grey-text">email</i>
-          </li>
-          <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
-            <i class="material-icons grey-text">phone</i>
-          </li>
-          <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
-            <i class="material-icons grey-text">place</i>
-          </li>
-          <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
-            <i class="material-icons grey-text">cake</i>
-          </li>
-          <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
-            <i class="material-icons grey-text">today</i>
-          </li>
-          <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
-            <i class="material-icons grey-text">link</i>
-          </li>
-          <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
-            <i class="material-icons grey-text">group_work</i>
-          </li>
-          <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
-            <i class="material-icons grey-text">chat_bubble</i>
-          </li>
-          <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
-            <i class="material-icons grey-text">dialer_sip</i>
-          </li>
-          <li class="center" style="height:45px; margin-top:64px; vertical-align:bottom;">
-            <i class="material-icons grey white-text" style="border-radius:10%;">subject</i>
-          </li>
+              </form>
+            </li>
+            <li class="center" style="margin-top:216px; height:45px; margin-bottom:20px;">
+              <i class="material-icons grey-text">domain</i>
+            </li>
+            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
+              <i class="material-icons grey-text">email</i>
+            </li>
+            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
+              <i class="material-icons grey-text">phone</i>
+            </li>
+            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
+              <i class="material-icons grey-text">place</i>
+            </li>
+            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
+              <i class="material-icons grey-text">cake</i>
+            </li>
+            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
+              <i class="material-icons grey-text">today</i>
+            </li>
+            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
+              <i class="material-icons grey-text">link</i>
+            </li>
+            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
+              <i class="material-icons grey-text">group_work</i>
+            </li>
+            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
+              <i class="material-icons grey-text">chat_bubble</i>
+            </li>
+            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
+              <i class="material-icons grey-text">dialer_sip</i>
+            </li>
+            <li class="center" style="height:45px; margin-top:64px; vertical-align:bottom;">
+              <i class="material-icons grey white-text" style="border-radius:10%;">subject</i>
+            </li>
           </ul>
         </div>
         <div class="col s10 m10 l11">
-            <ul style="margin-left:8px;">
-              <li>
-                <input placeholder="Name" id="name" type="text" class="validate">
-              </li>
-              <li>
-                  <div class="col s6 m6 l6" style="padding-left:0;">
-                    <input placeholder="Phonetic last" id="phonetic-last" type="text" class="validate">
-                  </div>
-                  <div class="col s6 m6 l6" style="padding-right:0;">
-                    <input placeholder="Phonetic first" id="phonetic-first" type="text" class="validate">
-                  </div>
-              </li>
-              <li>
-                <input placeholder="Nickname" id="nickname" type="text" class="validate">
-              </li>
-              <li>
-                <input placeholder="File as" id="file-as" type="text" class="validate">
-              </li>
-              <li>
-                  <div class="col s6 m6 l6" style="padding-left:0;">
-                    <input placeholder="Company" id="company" type="text" class="validate">
-                  </div>
-                  <div class="col s6 m6 l6" style="padding-right:0;">
-                    <input placeholder="Job title" id="job-title" type="text" class="validate">
-                  </div>
-              </li>
-              <li>
-                <input placeholder="Email" id="email" type="email" class="validate">
-              </li>
-              <li>
-                <input placeholder="Phone" id="phone" type="number" class="validate">
-              </li>
-              <li>
-                <input placeholder="Address" id="address" type="text" class="validate">
-              </li>
-              <li>
-                <input placeholder="Birth" id="birth" type="date" class="validate">
-              </li>
-              <li>
-                <input placeholder="Date" id="date" type="date" class="validate">
-              </li>
-              <li>
-                <input placeholder="Website" id="site" type="text" class="validate">
-              </li>
-              <li>
-                <input placeholder="Relation" id="relation" type="text" class="validate">
-              </li>
-              <li>
-                <input placeholder="IM" id="im" type="text" class="validate">
-              </li>
-              <li>
-                <input placeholder="Internet call" id="internet-call" type="text" class="validate">
-              </li>
-              <li>
-                <input placeholder="Custom" id="custom" type="text" class="validate">
-              </li>
-              <li>
-                <input placeholder="Note" id="note" type="text" class="validate">
-              </li>
-            </ul>
+          <ul style="margin-left:8px;">
+            <li>
+              <input placeholder="Name" id="name" type="text" class="validate">
+            </li>
+            <li>
+              <div class="col s6 m6 l6" style="padding-left:0;">
+                <input placeholder="Phonetic last" id="phonetic-last" type="text" class="validate">
+              </div>
+              <div class="col s6 m6 l6" style="padding-right:0;">
+                <input placeholder="Phonetic first" id="phonetic-first" type="text" class="validate">
+              </div>
+            </li>
+            <li>
+              <input placeholder="Nickname" id="nickname" type="text" class="validate">
+            </li>
+            <li>
+              <input placeholder="File as" id="file-as" type="text" class="validate">
+            </li>
+            <li>
+              <div class="col s6 m6 l6" style="padding-left:0;">
+                <input placeholder="Company" id="company" type="text" class="validate">
+              </div>
+              <div class="col s6 m6 l6" style="padding-right:0;">
+                <input placeholder="Job title" id="job-title" type="text" class="validate">
+              </div>
+            </li>
+            <li>
+              <input placeholder="Email" id="email" type="email" class="validate">
+            </li>
+            <li>
+              <input placeholder="Phone" id="phone" type="number" class="validate">
+            </li>
+            <li>
+              <input placeholder="Address" id="address" type="text" class="validate">
+            </li>
+            <li>
+              <input placeholder="Birth" id="birth" type="date" class="validate">
+            </li>
+            <li>
+              <input placeholder="Date" id="date" type="date" class="validate">
+            </li>
+            <li>
+              <input placeholder="Website" id="site" type="text" class="validate">
+            </li>
+            <li>
+              <input placeholder="Relation" id="relation" type="text" class="validate">
+            </li>
+            <li>
+              <input placeholder="IM" id="im" type="text" class="validate">
+            </li>
+            <li>
+              <input placeholder="Internet call" id="internet-call" type="text" class="validate">
+            </li>
+            <li>
+              <input placeholder="Custom" id="custom" type="text" class="validate">
+            </li>
+            <li>
+              <input placeholder="Note" id="note" type="text" class="validate">
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -201,7 +202,137 @@
     </div>
   </div>
 
-  
+  <div class="body-padding">
+    <table>
+      <thead>
+        <tr>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr style="cursor:pointer;">
+          <td class="indigo-text center first-td" style="width:32px;">A</td>
+          <td style="width:48px;"><div class="circle-background blue white-text">A</div></td>
+          <td><span>Athiporn</span></td>
+          <td>+66911911991</td>
+          <td></td>
+          <td class="center">
+            <a href="#!"><i class="material-icons grey-text">star_border</i></a>
+            <a href="#!"><i class="material-icons grey-text">mode_edit</i></a>
+            <a href="#!"><i class="material-icons grey-text">more_vert</i></a>
+          </td>
+        </tr>
+        <tr style="cursor:pointer;">
+          <td></td>
+          <td><div class="circle-background green white-text">A</div></td>
+          <td><span>Athiporn</span></td>
+          <td>+66911911991</td>
+          <td></td>
+          <td class="center">
+            <a href="#!"><i class="material-icons grey-text">star_border</i></a>
+            <a href="#!"><i class="material-icons grey-text">mode_edit</i></a>
+            <a href="#!"><i class="material-icons grey-text">more_vert</i></a>
+          </td>
+        </tr>
+        <tr style="cursor:pointer;">
+          <td></td>
+          <td><div class="circle-background purple white-text">A</div></td>
+          <td><span>Athiporn</span></td>
+          <td>+66911911991</td>
+          <td></td>
+          <td class="center">
+            <a href="#!"><i class="material-icons grey-text">star_border</i></a>
+            <a href="#!"><i class="material-icons grey-text">mode_edit</i></a>
+            <a href="#!"><i class="material-icons grey-text">more_vert</i></a>
+          </td>
+        </tr>
+        <tr style="cursor:pointer;">
+          <td class="indigo-text center first-td" style="width:32px;">B</td>
+          <td ><div class="circle-background amber white-text">B</div></td>
+          <td><span>Benjamin</span></td>
+          <td>+66900900090</td>
+          <td></td>
+          <td class="center">
+            <a href="#!"><i class="material-icons grey-text">star_border</i></a>
+            <a href="#!"><i class="material-icons grey-text">mode_edit</i></a>
+            <a href="#!"><i class="material-icons grey-text">more_vert</i></a>
+          </td>
+        </tr>
+        <tr style="cursor:pointer;">
+          <td></td>
+          <td ><div class="circle-background brown white-text">B</div></td>
+          <td><span>Benjamin</span></td>
+          <td>+66900900090</td>
+          <td></td>
+          <td class="center">
+            <a href="#!"><i class="material-icons grey-text">star_border</i></a>
+            <a href="#!"><i class="material-icons grey-text">mode_edit</i></a>
+            <a href="#!"><i class="material-icons grey-text">more_vert</i></a>
+          </td>
+        </tr>
+        <tr style="cursor:pointer;">
+          <td></td>
+          <td ><div class="circle-background cyan white-text">B</div></td>
+          <td><span>Benjamin</span></td>
+          <td>+66900900090</td>
+          <td></td>
+          <td class="center">
+            <a href="#!"><i class="material-icons grey-text">star_border</i></a>
+            <a href="#!"><i class="material-icons grey-text">mode_edit</i></a>
+            <a href="#!"><i class="material-icons grey-text">more_vert</i></a>
+          </td>
+        </tr>
+        <tr style="cursor:pointer;">
+          <td></td>
+          <td ><div class="circle-background pink white-text">B</div></td>
+          <td><span>Benjamin</span></td>
+          <td>+66900900090</td>
+          <td></td>
+          <td class="center">
+            <a href="#!"><i class="material-icons grey-text">star_border</i></a>
+            <a href="#!"><i class="material-icons grey-text">mode_edit</i></a>
+            <a href="#!"><i class="material-icons grey-text">more_vert</i></a>
+          </td>
+        </tr>
+        <tr style="cursor:pointer;">
+          <td class="indigo-text center first-td" style="width:32px;">D</td>
+          <td style="width:48px;"><div class="circle-background blue white-text">D</div></td>
+          <td><span>Dog</span></td>
+          <td>+66987654321</td>
+          <td></td>
+          <td class="center">
+            <a href="#!"><i class="material-icons grey-text">star_border</i></a>
+            <a href="#!"><i class="material-icons grey-text">mode_edit</i></a>
+            <a href="#!"><i class="material-icons grey-text">more_vert</i></a>
+          </td>
+        </tr>
+        <tr style="cursor:pointer;">
+          <td></td>
+          <td style="width:48px;"><div class="circle-background light-blue white-text">D</div></td>
+          <td><span>Dog</span></td>
+          <td>+66987654321</td>
+          <td></td>
+          <td class="center">
+            <a href="#!"><i class="material-icons grey-text">star_border</i></a>
+            <a href="#!"><i class="material-icons grey-text">mode_edit</i></a>
+            <a href="#!"><i class="material-icons grey-text">more_vert</i></a>
+          </td>
+        </tr>
+        <tr style="cursor:pointer;">
+          <td></td>
+          <td style="width:48px;"><div class="circle-background deep-purple white-text">D</div></td>
+          <td><span>Dog</span></td>
+          <td>+66987654321</td>
+          <td></td>
+          <td class="center">
+            <a href="#!"><i class="material-icons grey-text">star_border</i></a>
+            <a href="#!"><i class="material-icons grey-text">mode_edit</i></a>
+            <a href="#!"><i class="material-icons grey-text">more_vert</i></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
