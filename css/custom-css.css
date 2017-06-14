@@ -1,0 +1,37 @@
+header, main, footer {
+  padding-left: 260px;
+}
+
+
+.circle-icon {
+    background: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 0;
+}
+
+.circle-avatar-on-navbar{
+-webkit-background-size: 32px 32px;
+background-size: 32px 32px;
+-webkit-border-radius: 50%;
+border-radius: 50%;
+display: block;
+margin: 0;
+overflow: hidden;
+position: relative;
+height: 32px;
+width: 32px;
+z-index: 0;
+margin-top: 16px;
+}
+
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
