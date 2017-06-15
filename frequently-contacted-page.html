@@ -106,7 +106,7 @@
             <a href="#modal-for-print">Print</a>
           </li>
           <li>
-            Undo Changes
+            <a href="#modal-for-undo-changes">Undo Changes</a>
           </li>
         </ul>
       </div>
@@ -536,6 +536,48 @@
   </div>
   <div class="modal-footer">
     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat indigo-text" style="font-weight:500;">GO TO OLD VERSION</a>
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" style="font-weight:500;">CANCEL</a>
+  </div>
+</div>
+
+<!-- Modal Undo Changes Structure -->
+<div id="modal-for-undo-changes" class="modal modal-fixed-footer" style="width:500px; height:410px;">
+  <div class="modal-content" style="padding:0;">
+    <div style="font-size:20px; font-weight:500; padding:24px 24px 20px 24px;">Undo changes</div>
+    <div style="font-size:14px; font-weight:400; padding:0 24px;">
+      Change your contacts list back to any state in the past 30 days.<br>
+      <a href="#!" class="indigo-text">Learn More</a>
+    </div>
+    <div style="font-size:14px; font-weight:400; padding:10px 24px;">
+      Undo changes from
+    </div>
+    <div style="padding:0 24px 0 24px;">
+      <form action="#">
+<p>
+  <input class="with-gap" name="group2" type="radio" id="10min" />
+  <label class="black-text" for="10min">10 min ago</label>
+</p>
+<p>
+  <input class="with-gap" name="group2" type="radio" id="1hr" checked="checked" />
+  <label class="black-text"  for="1hr">1 hr ago</label>
+</p>
+<p>
+  <input class="with-gap" name="group2" type="radio" id="yesterday"  />
+  <label class="black-text"  for="yesterday">Yesterday</label>
+</p>
+<p>
+  <input class="with-gap" name="group2" type="radio" id="1week"/>
+  <label class="black-text"  for="1week">1 Week ago</label>
+</p>
+<p>
+  <input class="with-gap" name="group2" type="radio" id="custom"  />
+  <label class="black-text"  for="custom">Custom</label>
+</p>
+</form>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat indigo-text" style="font-weight:500;">CONFIRM</a>
     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" style="font-weight:500;">CANCEL</a>
   </div>
 </div>

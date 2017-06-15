@@ -107,7 +107,7 @@
             <a href="#modal-for-print">Print</a>
           </li>
           <li>
-            Undo Changes
+            <a href="#modal-for-undo-changes">Undo Changes</a>
           </li>
         </ul>
       </div>
@@ -131,12 +131,6 @@
 </head>
 
 <body>
-  <!-- Modal Trigger -->
-  <div class="fixed-action-btn" style="bottom: 24px; right: 24px;">
-    <a class="btn-floating btn-large waves-effect waves-light red modal-trigger" href="#modal1">
-      <i class="material-icons">add</i>
-    </a>
-  </div>
 
   <!-- Modal create label structure -->
   <div id="modal-for-create" class="modal" style="width:248px;">
@@ -152,127 +146,7 @@
     </div>
   </div>
 
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal modal-fixed-footer">
-    <div class="modal-content">
-      <span style="font-size:20px; padding-bottom:24px;">Create contact</span>
-      <div class="row">
-        <div class="col s2 m2 l1" style="padding-left:0;">
-          <ul>
-            <li class="center">
-              <form action="#">
-                <div class="file-field input-field">
-                  <div>
-                    <i class="medium material-icons grey-text lighten-2" style="cursor:pointer;">account_circle</i>
-                    <input type="file">
-                  </div>
-                </div>
-              </form>
-            </li>
-            <li class="center" style="margin-top:216px; height:45px; margin-bottom:20px;">
-              <i class="material-icons grey-text">domain</i>
-            </li>
-            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
-              <i class="material-icons grey-text">email</i>
-            </li>
-            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
-              <i class="material-icons grey-text">phone</i>
-            </li>
-            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
-              <i class="material-icons grey-text">place</i>
-            </li>
-            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
-              <i class="material-icons grey-text">cake</i>
-            </li>
-            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
-              <i class="material-icons grey-text">today</i>
-            </li>
-            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
-              <i class="material-icons grey-text">link</i>
-            </li>
-            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
-              <i class="material-icons grey-text">group_work</i>
-            </li>
-            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
-              <i class="material-icons grey-text">chat_bubble</i>
-            </li>
-            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
-              <i class="material-icons grey-text">dialer_sip</i>
-            </li>
-            <li class="center" style="height:45px; margin-top:64px; vertical-align:bottom;">
-              <i class="material-icons grey white-text" style="border-radius:10%;">subject</i>
-            </li>
-          </ul>
-        </div>
-        <div class="col s10 m10 l11">
-          <ul style="margin-left:8px;">
-            <li>
-              <input placeholder="Name" id="name" type="text" class="validate">
-            </li>
-            <li>
-              <div class="col s6 m6 l6" style="padding-left:0;">
-                <input placeholder="Phonetic last" id="phonetic-last" type="text" class="validate">
-              </div>
-              <div class="col s6 m6 l6" style="padding-right:0;">
-                <input placeholder="Phonetic first" id="phonetic-first" type="text" class="validate">
-              </div>
-            </li>
-            <li>
-              <input placeholder="Nickname" id="nickname" type="text" class="validate">
-            </li>
-            <li>
-              <input placeholder="File as" id="file-as" type="text" class="validate">
-            </li>
-            <li>
-              <div class="col s6 m6 l6" style="padding-left:0;">
-                <input placeholder="Company" id="company" type="text" class="validate">
-              </div>
-              <div class="col s6 m6 l6" style="padding-right:0;">
-                <input placeholder="Job title" id="job-title" type="text" class="validate">
-              </div>
-            </li>
-            <li>
-              <input placeholder="Email" id="email" type="email" class="validate">
-            </li>
-            <li>
-              <input placeholder="Phone" id="phone" type="number" class="validate">
-            </li>
-            <li>
-              <input placeholder="Address" id="address" type="text" class="validate">
-            </li>
-            <li>
-              <input placeholder="Birth" id="birth" type="date" class="validate">
-            </li>
-            <li>
-              <input placeholder="Date" id="date" type="date" class="validate">
-            </li>
-            <li>
-              <input placeholder="Website" id="site" type="text" class="validate">
-            </li>
-            <li>
-              <input placeholder="Relation" id="relation" type="text" class="validate">
-            </li>
-            <li>
-              <input placeholder="IM" id="im" type="text" class="validate">
-            </li>
-            <li>
-              <input placeholder="Internet call" id="internet-call" type="text" class="validate">
-            </li>
-            <li>
-              <input placeholder="Custom" id="custom" type="text" class="validate">
-            </li>
-            <li>
-              <input placeholder="Note" id="note" type="text" class="validate">
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat blue-text">Save</a>
-      <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat blue-text">Cancel</a>
-    </div>
-  </div>
+
 
   <!-- Modal settings structure -->
   <div id="modal-for-settings" class="modal" style="width:378px;">
@@ -537,6 +411,48 @@
   </div>
   <div class="modal-footer">
     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat indigo-text" style="font-weight:500;">GO TO OLD VERSION</a>
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" style="font-weight:500;">CANCEL</a>
+  </div>
+</div>
+
+<!-- Modal Undo Changes Structure -->
+<div id="modal-for-undo-changes" class="modal modal-fixed-footer" style="width:500px; height:410px;">
+  <div class="modal-content" style="padding:0;">
+    <div style="font-size:20px; font-weight:500; padding:24px 24px 20px 24px;">Undo changes</div>
+    <div style="font-size:14px; font-weight:400; padding:0 24px;">
+      Change your contacts list back to any state in the past 30 days.<br>
+      <a href="#!" class="indigo-text">Learn More</a>
+    </div>
+    <div style="font-size:14px; font-weight:400; padding:10px 24px;">
+      Undo changes from
+    </div>
+    <div style="padding:0 24px 0 24px;">
+      <form action="#">
+<p>
+  <input class="with-gap" name="group2" type="radio" id="10min" />
+  <label class="black-text" for="10min">10 min ago</label>
+</p>
+<p>
+  <input class="with-gap" name="group2" type="radio" id="1hr" checked="checked" />
+  <label class="black-text"  for="1hr">1 hr ago</label>
+</p>
+<p>
+  <input class="with-gap" name="group2" type="radio" id="yesterday"  />
+  <label class="black-text"  for="yesterday">Yesterday</label>
+</p>
+<p>
+  <input class="with-gap" name="group2" type="radio" id="1week"/>
+  <label class="black-text"  for="1week">1 Week ago</label>
+</p>
+<p>
+  <input class="with-gap" name="group2" type="radio" id="custom"  />
+  <label class="black-text"  for="custom">Custom</label>
+</p>
+</form>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat indigo-text" style="font-weight:500;">CONFIRM</a>
     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" style="font-weight:500;">CANCEL</a>
   </div>
 </div>
