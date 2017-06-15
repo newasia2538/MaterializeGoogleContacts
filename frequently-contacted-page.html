@@ -48,7 +48,7 @@
       <a href="#!"><i class="material-icons">keyboard_arrow_up</i>Labels</a>
     </li>
     <li>
-      <a href="#!"><i class="material-icons">add</i>Create Labels</a>
+      <a href="#modal-for-create" class="modal-trigger"><i class="material-icons">add</i>Create Labels</a>
     </li>
     <li><div class="divider"></div></li>
     <li>
@@ -78,6 +78,20 @@
     <a class="btn-floating btn-large waves-effect waves-light red modal-trigger" href="#modal1">
       <i class="material-icons">add</i>
     </a>
+  </div>
+
+  <!-- Modal create label structure -->
+  <div id="modal-for-create" class="modal" style="width:248px;">
+    <div class="modal-content">
+      <div class="input-field">
+        <input id="label" type="text" class="validate">
+        <label for="label">Label</label>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat blue-text">Save</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+    </div>
   </div>
 
   <!-- Modal Structure -->
@@ -202,50 +216,50 @@
     </div>
   </div>
 
-<div class="body-padding">
-  <table>
-    <thead>
-      <tr>
-      </tr>
-    </thead>
+  <div class="body-padding">
+    <table>
+      <thead>
+        <tr>
+        </tr>
+      </thead>
 
-    <tbody>
-      <tr style="cursor:pointer;">
-        <td style="width:48px; padding-right:16px; padding-left:16px"><div class="circle-background blue white-text">A</div></td>
-        <td class="hide-on-med-and-down"><span>Athiporn</span></td>
-        <td><span>athiporn@angstromsolutions.net</span></td>
-        <td class="hide-on-med-and-down"><span>+66911911991</span></td>
-        <td class="center hide-on-med-and-down">
-          <a href="#!"><i class="material-icons grey-text">star_border</i></a>
-          <a href="#!"><i class="material-icons grey-text">person_add</i></a>
-          <a href="#!"><i class="material-icons grey-text">more_vert</i></a>
-        </td>
-      </tr>
-      <tr style="cursor:pointer;">
-        <td style="width:48px; padding-right:16px; padding-left:16px"><div class="circle-background light-green white-text">D</div></td>
-        <td class="hide-on-med-and-down"><span>Dog</span></td>
-        <td><span>dog.dog@gmail.com</span></td>
-        <td class="hide-on-med-and-down"><span>+66900900090</span></td>
-        <td class="center hide-on-med-and-down">
-          <a href="#!"><i class="material-icons grey-text">star_border</i></a>
-          <a href="#!"><i class="material-icons grey-text">person_add</i></a>
-          <a href="#!"><i class="material-icons grey-text">more_vert</i></a>
-        </td>
-      </tr>
-      <tr style="cursor:pointer;">
-        <td style="width:48px; padding-right:16px; padding-left:16px"><div class="circle-background amber white-text">B</div></td>
-        <td class="hide-on-med-and-down"><span>Benjamin</span></td>
-        <td><span>benjamin@gmail.com</span></td>
-        <td class="hide-on-med-and-down"><span>+66987654321</span></td>
-        <td class="center hide-on-med-and-down">
-          <a href="#!"><i class="material-icons grey-text">star_border</i></a>
-          <a href="#!"><i class="material-icons grey-text">person_add</i></a>
-          <a href="#!"><i class="material-icons grey-text">more_vert</i></a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+      <tbody>
+        <tr style="cursor:pointer;">
+          <td style="width:48px; padding-right:16px; padding-left:16px"><div class="circle-background blue white-text">A</div></td>
+          <td class="hide-on-med-and-down"><span>Athiporn</span></td>
+          <td><span>athiporn@angstromsolutions.net</span></td>
+          <td class="hide-on-med-and-down"><span>+66911911991</span></td>
+          <td class="center hide-on-med-and-down">
+            <a href="#!"><i class="material-icons grey-text">star_border</i></a>
+            <a href="#!"><i class="material-icons grey-text">person_add</i></a>
+            <a href="#!"><i class="material-icons grey-text">more_vert</i></a>
+          </td>
+        </tr>
+        <tr style="cursor:pointer;">
+          <td style="width:48px; padding-right:16px; padding-left:16px"><div class="circle-background light-green white-text">D</div></td>
+          <td class="hide-on-med-and-down"><span>Dog</span></td>
+          <td><span>dog.dog@gmail.com</span></td>
+          <td class="hide-on-med-and-down"><span>+66900900090</span></td>
+          <td class="center hide-on-med-and-down">
+            <a href="#!"><i class="material-icons grey-text">star_border</i></a>
+            <a href="#!"><i class="material-icons grey-text">person_add</i></a>
+            <a href="#!"><i class="material-icons grey-text">more_vert</i></a>
+          </td>
+        </tr>
+        <tr style="cursor:pointer;">
+          <td style="width:48px; padding-right:16px; padding-left:16px"><div class="circle-background amber white-text">B</div></td>
+          <td class="hide-on-med-and-down"><span>Benjamin</span></td>
+          <td><span>benjamin@gmail.com</span></td>
+          <td class="hide-on-med-and-down"><span>+66987654321</span></td>
+          <td class="center hide-on-med-and-down">
+            <a href="#!"><i class="material-icons grey-text">star_border</i></a>
+            <a href="#!"><i class="material-icons grey-text">person_add</i></a>
+            <a href="#!"><i class="material-icons grey-text">more_vert</i></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

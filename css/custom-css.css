@@ -45,6 +45,14 @@ margin-top: 16px;
 
 }
 
+.circle-background-center{
+  margin: 10% auto 0 auto;
+}
+
+.circle-background-center div{
+  margin-left: 40%;
+}
+
 .first-td {
   font-size: 18px;
   font-weight: 700;
@@ -58,5 +66,8 @@ margin-top: 16px;
   }
   .body-padding {
     padding-left: 0;
+  }
+  .circle-background-center div{
+    margin-left: 20%;
   }
 }

@@ -48,7 +48,7 @@
       <a href="#!"><i class="material-icons">keyboard_arrow_up</i>Labels</a>
     </li>
     <li>
-      <a href="#!"><i class="material-icons">add</i>Create Labels</a>
+      <a href="#modal-for-create" class="modal-trigger"><i class="material-icons">add</i>Create Labels</a>
     </li>
     <li><div class="divider"></div></li>
     <li>
@@ -78,6 +78,20 @@
     <a class="btn-floating btn-large waves-effect waves-light red modal-trigger" href="#modal1">
       <i class="material-icons">add</i>
     </a>
+  </div>
+
+  <!-- Modal create label structure -->
+  <div id="modal-for-create" class="modal" style="width:248px;">
+    <div class="modal-content">
+      <div class="input-field">
+        <input id="label" type="text" class="validate">
+        <label for="label">Label</label>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat blue-text">Save</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+    </div>
   </div>
 
   <!-- Modal Structure -->

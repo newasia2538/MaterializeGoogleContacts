@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/custom-css.css"  media="screen,projection"/>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper indigo accent-4">
+        <ul class="left">
+          <li>
+            <a href="#" data-activates="slide-out" class="button"><i class="material-icons">menu</i></a>
+          </li>
+          <li class="hide-on-med-and-down"><a href="contacts-page.html" style="font-size:24px;">Google Contacts</a></li>
+          <li class="hide-on-large-only"><a href="contacts-page.html" style="font-size:24px;">Contacts</a></li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#!"><i class="material-icons">apps</i></a></li>
+          <li><a href="#!"><i class="material-icons">notifications</i></a></li>
+          <li><a href="#!"><img class="circle-avatar-on-navbar" src="pic/profile.png"></a></li>
+          <li><a href="#!" class="button-collapse"><i class="material-icons">search</i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <ul id="slide-out" class="side-nav fixed" style="top:64px;">
+    <li>
+      <a href="contacts-page.html" class="blue-text"><i class="material-icons blue-text">contacts</i>Contacts(99+)</a>
+    </li>
+    <li>
+      <a href="frequently-contacted-page.html"><i class="material-icons">update</i>Frequently contacted</a>
+    </li>
+    <li>
+      <a href="#!"><i class="material-icons">domain</i>Directory</a>
+    </li>
+    <li>
+      <a href="#!"><i class="material-icons">content_copy</i>Duplicates</a>
+    </li>
+    <li><div class="divider"></div></li>
+    <li>
+      <a href="#!"><i class="material-icons">keyboard_arrow_up</i>Labels</a>
+    </li>
+    <li>
+      <a href="#modal-for-create" class="modal-trigger"><i class="material-icons">add</i>Create Labels</a>
+    </li>
+    <li><div class="divider"></div></li>
+    <li>
+      <a href="#!"><i class="material-icons">keyboard_arrow_down</i>More</a>
+    </li>
+    <li><div class="divider"></div></li>
+    <li>
+      <a href="#!"><i class="material-icons">settings</i>Settings</a>
+    </li>
+    <li>
+      <a href="#!"><i class="material-icons">feedback</i>Send feedback</a>
+    </li>
+    <li>
+      <a href="#!"><i class="material-icons">help</i>Help</a>
+    </li>
+    <li>
+      <a href="#!"><i class="material-icons">exit_to_app</i>Go to the old version</a>
+    </li>
+  </ul>
+
+
+</head>
+
+<body>
+  <!-- Modal Trigger -->
+  <div class="fixed-action-btn" style="bottom: 24px; right: 24px;">
+    <a class="btn-floating btn-large waves-effect waves-light red modal-trigger" href="#modal1">
+      <i class="material-icons">add</i>
+    </a>
+  </div>
+
+  <!-- Modal create label structure -->
+  <div id="modal-for-create" class="modal" style="width:248px;">
+    <div class="modal-content">
+      <div class="input-field">
+        <input id="label" type="text" class="validate">
+        <label for="label">Label</label>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat blue-text">Save</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+    </div>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <span style="font-size:20px; padding-bottom:24px;">Create contact</span>
+      <div class="row">
+        <div class="col s2 m2 l1" style="padding-left:0;">
+          <ul>
+            <li class="center">
+              <form action="#">
+                <div class="file-field input-field">
+                  <div>
+                    <i class="medium material-icons grey-text lighten-2" style="cursor:pointer;">account_circle</i>
+                    <input type="file">
+                  </div>
+                </div>
+              </form>
+            </li>
+            <li class="center" style="margin-top:216px; height:45px; margin-bottom:20px;">
+              <i class="material-icons grey-text">domain</i>
+            </li>
+            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
+              <i class="material-icons grey-text">email</i>
+            </li>
+            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
+              <i class="material-icons grey-text">phone</i>
+            </li>
+            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
+              <i class="material-icons grey-text">place</i>
+            </li>
+            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
+              <i class="material-icons grey-text">cake</i>
+            </li>
+            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
+              <i class="material-icons grey-text">today</i>
+            </li>
+            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
+              <i class="material-icons grey-text">link</i>
+            </li>
+            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
+              <i class="material-icons grey-text">group_work</i>
+            </li>
+            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
+              <i class="material-icons grey-text">chat_bubble</i>
+            </li>
+            <li class="center" style="height:45px; margin-bottom:20px; vertical-align:bottom;">
+              <i class="material-icons grey-text">dialer_sip</i>
+            </li>
+            <li class="center" style="height:45px; margin-top:64px; vertical-align:bottom;">
+              <i class="material-icons grey white-text" style="border-radius:10%;">subject</i>
+            </li>
+          </ul>
+        </div>
+        <div class="col s10 m10 l11">
+          <ul style="margin-left:8px;">
+            <li>
+              <input placeholder="Name" id="name" type="text" class="validate">
+            </li>
+            <li>
+              <div class="col s6 m6 l6" style="padding-left:0;">
+                <input placeholder="Phonetic last" id="phonetic-last" type="text" class="validate">
+              </div>
+              <div class="col s6 m6 l6" style="padding-right:0;">
+                <input placeholder="Phonetic first" id="phonetic-first" type="text" class="validate">
+              </div>
+            </li>
+            <li>
+              <input placeholder="Nickname" id="nickname" type="text" class="validate">
+            </li>
+            <li>
+              <input placeholder="File as" id="file-as" type="text" class="validate">
+            </li>
+            <li>
+              <div class="col s6 m6 l6" style="padding-left:0;">
+                <input placeholder="Company" id="company" type="text" class="validate">
+              </div>
+              <div class="col s6 m6 l6" style="padding-right:0;">
+                <input placeholder="Job title" id="job-title" type="text" class="validate">
+              </div>
+            </li>
+            <li>
+              <input placeholder="Email" id="email" type="email" class="validate">
+            </li>
+            <li>
+              <input placeholder="Phone" id="phone" type="number" class="validate">
+            </li>
+            <li>
+              <input placeholder="Address" id="address" type="text" class="validate">
+            </li>
+            <li>
+              <input placeholder="Birth" id="birth" type="date" class="validate">
+            </li>
+            <li>
+              <input placeholder="Date" id="date" type="date" class="validate">
+            </li>
+            <li>
+              <input placeholder="Website" id="site" type="text" class="validate">
+            </li>
+            <li>
+              <input placeholder="Relation" id="relation" type="text" class="validate">
+            </li>
+            <li>
+              <input placeholder="IM" id="im" type="text" class="validate">
+            </li>
+            <li>
+              <input placeholder="Internet call" id="internet-call" type="text" class="validate">
+            </li>
+            <li>
+              <input placeholder="Custom" id="custom" type="text" class="validate">
+            </li>
+            <li>
+              <input placeholder="Note" id="note" type="text" class="validate">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat blue-text">Save</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat blue-text">Cancel</a>
+    </div>
+  </div>
+
+  <div class="body-padding">
+    <div class="center">
+      <ul>
+        <li class="center fixed">
+          <div class="circle grey lighten-2 circle-background-center" style="width:200px; height:200px;">
+            <i class="material-icons"></i>
+            <img src="pic/ic_launcher.png" style="width:100px; height:100px; margin:48px; auto; overflow:visible;">
+          </div>
+        </li>
+        <li>
+          <div>
+            <p class="grey-text" style="font-size:16px; font-weight:400px; line-height:24px;">
+              You have no duplicate contacts
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/custom-js.js"></script>
+</body>
+</html>
