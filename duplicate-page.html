@@ -95,10 +95,10 @@
           More
         </a>
       </div>
-      <div class="collapsible-body" style="padding-left:64px;">
+      <div class="collapsible-body" style="padding-left:32px;">
         <ul class="black-text">
           <li>
-            Import
+            <a href="#modal-for-import">Import</a>
           </li>
           <li>
             Export
@@ -433,6 +433,83 @@
         Send feedback
       </span>
     </a>
+  </div>
+</div>
+
+<!-- Modal Import Structure -->
+<div id="modal-for-import" class="modal modal-fixed-footer" style="width:466px;">
+  <div class="modal-content" style="padding:0;">
+    <div class="blue darken-4" style="padding:24px 0 24px 24px;">
+      <div class="circle-background blue darken-1" style="display:table-cell;">
+        <i class="material-icons white-text" style="vertical-align:middle;">import_contacts</i>
+      </div>
+      <div class="white-text" style="vertical-align:middle; display:table-cell; font-size:20px; font-weight:500; padding-left:24px;">
+        Import contacts from other accounts
+      </div>
+    </div>
+    <div style="padding:0 24px;">
+      <table class="bordered centered">
+        <thead>
+          <tr>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              <a href="#!">
+                <img src="pic/yahoo.png" style="width:88px; height:32px;">
+              </a>
+            </td>
+            <td style="font-size:16px; font-weight:500;">Yahoo Mail</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#!">
+                <img src="pic/outlook.png" style="width:60px; height:32px;">
+              </a>
+            </td>
+            <td style="font-size:16px; font-weight:500;">Outlook.com</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#!">
+                <img src="pic/aol.png" style="width:88px; height:32px;">
+              </a>
+            </td>
+            <td style="font-size:16px; font-weight:500;">AOL</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#!">
+                <i class="material-icons grey-text">email</i>
+              </a>
+            </td>
+            <td style="font-size:16px; font-weight:500;">
+              <a href="#!" class="grey-text darken-3">
+                <div style="font-size:16px;">Other email provider</div>
+                <div style="font-size:12px;">Apple, IG, Naver, and 200 more</div>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#!">
+                <i class="material-icons grey-text">import_contacts</i>
+              </a>
+            </td>
+            <td style="font-size:16px; font-weight:500;">
+              <a href="#!" class="grey-text darken-3">
+                <div style="font-size:16px;">CSV or vCard file</div>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat indigo-text">Cancel</a>
   </div>
 </div>
 
