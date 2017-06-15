@@ -19,3 +19,7 @@ $('.modal').modal({
     complete: function() {} // Callback for Modal close
   }
 );
+
+$(document).ready(function() {
+  $('select').material_select();
+});
