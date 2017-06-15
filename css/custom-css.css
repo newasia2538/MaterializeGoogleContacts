@@ -59,6 +59,15 @@ margin-top: 16px;
   line-height: 24px;
 }
 
+#modal-for-help {
+  position: fixed;
+  left: initial;
+  right: 16px;
+  width: 360px;
+  height: 560px;
+  max-height: 75%;
+}
+
 
 @media only screen and (max-width : 992px) {
   header, main, footer {
