@@ -23,3 +23,6 @@ $('.modal').modal({
 $(document).ready(function() {
   $('select').material_select();
 });
+
+$('#feedback').val('');
+$('#feedback').trigger('autoresize');

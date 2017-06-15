@@ -59,7 +59,7 @@
       <a href="#modal-for-settings"><i class="material-icons">settings</i>Settings</a>
     </li>
     <li>
-      <a href="#!"><i class="material-icons">feedback</i>Send feedback</a>
+      <a href="#modal-for-send-feedback"><i class="material-icons">feedback</i>Send feedback</a>
     </li>
     <li>
       <a href="#!"><i class="material-icons">help</i>Help</a>
@@ -261,29 +261,64 @@
     </div>
   </div>
 
-  <div class="body-padding">
-    <div class="center">
-      <ul>
-        <li class="center fixed">
-          <div class="circle grey lighten-2 circle-background-center" style="width:200px; height:200px;">
-            <i class="material-icons"></i>
-            <img src="pic/ic_launcher.png" style="width:100px; height:100px; margin:48px; auto; overflow:visible;">
-          </div>
-        </li>
-        <li>
-          <div>
-            <p class="grey-text" style="font-size:16px; font-weight:400px; line-height:24px;">
-              You have no duplicate contacts
-            </p>
-          </div>
-        </li>
-      </ul>
+  <!-- Modal for send feedback -->
+  <div id="modal-for-send-feedback" class="modal" style="width:360px;">
+    <div class="modal-content" style="padding:0;">
+      <div class="blue-grey darken-1"style="padding:13px 16px;">
+        <span class="white-text" style="font-size:20px; font-weight:600;">
+          Send feedback
+        </span>
+      </div>
+      <div style="padding:0 16px;">
+        <form>
+          <div class="input-field">
+            <textarea id="feedback" class="materialize-textarea" placeholder="Describe your issue or share your ideas"
+            style="font-size:16px; font-weight:400; margin-bottom:0; height:178px;">
+          </textarea>
+        </div>
+      </form>
+    </div>
+    <div style="padding:8px 16px 0 8px;">
+      <p>
+        <input type="checkbox" class="filled-in" id="filled-in-box"/>
+        <label for="filled-in-box" class="black-text">Include screenshot</label>
+      </p>
+    </div>
+    <div style="padding:0 16px 12px 16px; font-size:12px; font-weight:400; line-height:1.4;">
+      <p>
+        Go to the <a href="#!">Legal Help page</a> to request content changes for legal reasons. Your feedback, <a href="#!">additional info</a>, and email will be sent to Google. See <a href="#!">Privacy Policy</a> and <a href="#!">Terms of Service</a>.
+      </p>
     </div>
   </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat blue-text">Send</a>
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+  </div>
+</div>
 
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script type="text/javascript" src="js/custom-js.js"></script>
+<div class="body-padding">
+  <div class="center">
+    <ul>
+      <li class="center fixed">
+        <div class="circle grey lighten-2 circle-background-center" style="width:200px; height:200px;">
+          <i class="material-icons"></i>
+          <img src="pic/ic_launcher.png" style="width:100px; height:100px; margin:48px; auto; overflow:visible;">
+        </div>
+      </li>
+      <li>
+        <div>
+          <p class="grey-text" style="font-size:16px; font-weight:400px; line-height:24px;">
+            You have no duplicate contacts
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/custom-js.js"></script>
 </body>
 </html>
